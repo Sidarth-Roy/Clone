@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="flex-column container">
+      <nav
+        class="nv sticky-top navbar navbar-expand-lg navbar-light text-white"
+      >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          id="ham"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="container-fluid mt-3 mx-5">
+          <!-- <div class="logo"> -->
+          <svg
+            width="20%"
+            height="auto"
+            viewBox="0 30 945 202"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0)">
+              <path
+                d="M41.87 40.6104H0V197.19H41.87V111.97H66.05V76.7604H41.87V40.6104Z"
+                fill="currentColor"
+              ></path>
+              <path
+                d="M162.86 72.7703C146.19 72.7703 134.22 78.8803 124.36 92.0203H123.89V40.6104H81.17V197.19H123.89V135.45C123.89 121.37 129.29 106.81 146.19 106.81C163.33 106.81 165.44 121.37 165.44 135.45V197.19H208.16V123.48C208.16 93.0004 193.38 72.7703 162.86 72.7703Z"
+                fill="currentColor"
+              ></path>
+              <path
+                d="M288.26 72.7705C249.06 72.7705 221.6 96.9505 221.6 137.091C221.6 178.641 251.41 201.181 291.32 201.181C305.17 201.181 318.78 197.891 329.81 191.081C340.84 184.271 349.3 174.001 352.58 159.861H311.5C306.81 167.861 300.24 170.861 291.08 170.861C273.47 170.861 264.32 161.471 264.32 144.101H354.23V139.641C354.23 98.5905 330.05 72.7705 288.26 72.7705ZM265 119.491C267.59 107.051 277.92 100.491 290.36 100.491C301.86 100.491 312.42 108.001 314.53 119.491H265Z"
+                fill="currentColor"
+              ></path>
+              <path
+                d="M394.65 19.2504C382.91 32.6304 382.44 44.8404 382.44 61.5104V76.7604H367.44V112H382.44V197.22H425.16V112H455V76.7604H425.16V57.2804C425.16 43.6604 428.92 37.0904 439.95 37.0904C445.59 37.0904 450.05 38.9704 454.95 41.0904V4.2304C449.303 1.32259 443.02 -0.131261 436.67 0.000396282C428.685 -0.0529818 420.786 1.6427 413.526 4.96831C406.267 8.29392 399.824 13.1688 394.65 19.2504V19.2504Z"
+                fill="currentColor"
+              ></path>
+              <path
+                d="M556.27 141.081C556.27 156.341 552.51 167.141 534.9 167.141C517.29 167.141 513.54 156.341 513.54 141.081V76.7607H470.82V149.301C470.82 188.971 498.75 201.181 534.9 201.181C571.05 201.181 599 189.001 599 149.301V76.7607H556.27V141.081Z"
+                fill="currentColor"
+              ></path>
+              <path
+                d="M670.84 40.6104H628.11V76.7604H614.26V111.97H628.11V197.19H670.84V111.97H695.02V76.7604H670.84V40.6104Z"
+                fill="currentColor"
+              ></path>
+              <path
+                d="M795.39 141.081C795.39 156.341 791.64 167.141 774.03 167.141C756.42 167.141 752.67 156.341 752.67 141.081V76.7607H709.94V149.301C709.94 188.971 737.88 201.181 774.03 201.181C810.18 201.181 838.11 189.001 838.11 149.301V76.7607H795.39V141.081Z"
+                fill="currentColor"
+              ></path>
+              <path
+                d="M936.18 75.1201C919.51 75.1201 905.42 81.6901 897.18 96.4801H896.71V76.7601H854V197.19H896.73V148.6C896.73 127.94 902.59 112.21 926.3 112.21C932.88 112.21 938.51 112.91 944.38 116.21V75.1201H936.18Z"
+                fill="currentColor"
+              ></path>
+            </g>
+            <defs>
+              <clipPath id="clip0">
+                <rect width="944.39" height="201.18" fill="currentColor"></rect>
+              </clipPath>
+            </defs>
+          </svg>
+          <!-- </div> -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item ms-5 me-4">
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="#"
+                  >Courses & Tools</a
+                >
+              </li>
+              <li class="nav-item mx-4">
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="#"
+                  >Content</a
+                >
+              </li>
+              <li class="nav-item mx-3">
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="#"
+                  >Our Mission</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="container container2">
+        <h1>The Legal Kit</h1>
+        <hr />
+        <h1>$99</h1>
+        <br />
+        <p>
+          Free your mind from worrying about the what-ifs and focus on the
+          important stuff with these industry standard legal agreements.
+        </p>
+        <ul class="price" role="list">
+          <li>15 page guidebook</li>
+          <li>MSA &amp; SOW templates</li>
+          <li>Employee agreement templates</li>
+          <li>NDA &amp; media release templates</li>
+          <li>Lifetime updates</li>
+        </ul>
+        <div class="mx-auto">
+          <button class="btn btn-danger" type="button" id="buynow">
+            BUY NOW
+          </button>
+        </div>
+      </div>
+
+      <img
+        src="https://assets-global.website-files.com/5d816b07d269382588dbcab1/5e45a476d989b8b39814ba56_the-legal-kit-cover.jpg"
+        alt=""
+        srcset=""
+        id="img1"
+      />
+    </div>
+
+    <div class="d-flex sticky-top container3 justify-content-between shadow">
+      <div class="d-flex">
+        <h6 class="ip">The Legal Kit</h6>
+        <h6 class="ip">|</h6>
+        <h6 class="ip">Overview</h6>
+        <h6 class="ip">What's Inside</h6>
+      </div>
+      <div>
+        <button type="button" class="btn btn-danger btn2">BUY NOW</button>
+      </div>
+    </div>
+
+    <div class="container4 grid-container">
+      <div class="grid-item">
+        <h3 class="header4">
+          <strong>Every new client and new project is a risk.</strong>
+        </h3>
+        <p class="p4">
+          You’ve probably experienced, or at least heard, some of the horror
+          stories. “The client ghosted me and I haven't been paid.” “We agreed
+          on three revisions, but they wanted more.” “I quoted them 12 pages for
+          the site, but the scope kept growing.”
+        </p>
+        <p>‍</p>
+      </div>
+      <div class="grid-item">
+        <img
+          src="https://assets-global.website-files.com/5d816b07d269382588dbcab1/5e2a34e666445b0767bbeae5_legal-overview1.jpg"
+          alt=""
+          class="img4"
+          sizes="(max-width: 479px) 100vw, (max-width: 767px) 94vw, (max-width: 991px) 90vw, (max-width: 1439px) 45vw, 44vw"
+          srcset="
+            https://assets-global.website-files.com/5d816b07d269382588dbcab1/5e2a34e666445b0767bbeae5_legal-overview1-p-500.jpeg   500w,
+            https://assets-global.website-files.com/5d816b07d269382588dbcab1/5e2a34e666445b0767bbeae5_legal-overview1-p-800.jpeg   800w,
+            https://assets-global.website-files.com/5d816b07d269382588dbcab1/5e2a34e666445b0767bbeae5_legal-overview1-p-1600.jpeg 1600w,
+            https://assets-global.website-files.com/5d816b07d269382588dbcab1/5e2a34e666445b0767bbeae5_legal-overview1.jpg         1920w
+          "
+        />
+      </div>
+      <div class="grid-item">
+        <img
+          src="https://assets-global.website-files.com/5d816b07d269382588dbcab1/5e2a52353fa13241a7e3770a_legal-overview2b.jpg"
+          alt=""
+          class="img4"
+          sizes="(max-width: 479px) 100vw, (max-width: 767px) 94vw, (max-width: 991px) 90vw, (max-width: 1439px) 45vw, 44vw"
+          srcset="
+            https://assets-global.website-files.com/5d816b07d269382588dbcab1/5e2a52353fa13241a7e3770a_legal-overview2b-p-500.jpeg   500w,
+            https://assets-global.website-files.com/5d816b07d269382588dbcab1/5e2a52353fa13241a7e3770a_legal-overview2b-p-800.jpeg   800w,
+            https://assets-global.website-files.com/5d816b07d269382588dbcab1/5e2a52353fa13241a7e3770a_legal-overview2b-p-1600.jpeg 1600w,
+            https://assets-global.website-files.com/5d816b07d269382588dbcab1/5e2a52353fa13241a7e3770a_legal-overview2b.jpg         1920w
+          "
+        />
+      </div>
+      <div class="grid-item">
+        <h3 class="header4">
+          <strong>At some point, you’re going to get burned.</strong>
+        </h3>
+        <p class="p4">
+          It happens to the best of us. And while it does tug on your spirit,
+          there’s not much you can do about unpredictability. But you can at
+          least be prepared for whatever may come, and set yourself up for
+          success.
+        </p>
+        <p>‍</p>
+      </div>
+      <div class="grid-item">
+        <h3 class="header4">
+          <strong>You’re a professional. Act like it.</strong>
+        </h3>
+        <p class="p4">
+          If you enter a new client relationship prepared, not only will you be
+          setting the terms of the engagement, but you let the client know that
+          you take their business seriously.
+        </p>
+        <p class="p4">
+          The Legal Kit includes agreements that are template versions of what
+          we use for our business here in the US, and they are applicable
+          internationally. If you're unsure, consider having a lawyer check them
+          out as well.
+        </p>
+        <p>‍</p>
+      </div>
+      <div class="grid-item">
+        <img
+          src="https://assets-global.website-files.com/5d816b07d269382588dbcab1/5e2a36ae76c7583e69dc185e_legal-overview3.jpg"
+          alt=""
+          class="img4"
+          sizes="(max-width: 479px) 100vw, (max-width: 767px) 94vw, (max-width: 991px) 90vw, (max-width: 1439px) 45vw, 44vw"
+          srcset="
+            https://assets-global.website-files.com/5d816b07d269382588dbcab1/5e2a36ae76c7583e69dc185e_legal-overview3-p-500.jpeg   500w,
+            https://assets-global.website-files.com/5d816b07d269382588dbcab1/5e2a36ae76c7583e69dc185e_legal-overview3-p-800.jpeg   800w,
+            https://assets-global.website-files.com/5d816b07d269382588dbcab1/5e2a36ae76c7583e69dc185e_legal-overview3-p-1600.jpeg 1600w,
+            https://assets-global.website-files.com/5d816b07d269382588dbcab1/5e2a36ae76c7583e69dc185e_legal-overview3.jpg         1920w
+          "
+        />
+      </div>
+    </div>
+    <div class="hr">
+      <hr />
+    </div>
+    <div>
+    <img
+      src="https://assets-global.website-files.com/5d816b07d269385f68dbcab0/5da7a77abdc2cf38c3e36922_image-sales-circle1.svg"
+      alt=""
+      class="img5"
+    />
+    <div class="container5">
+      <div class="d5" style="color: red">The Legal Kit</div>
+      <h1 id="h15">
+        Hope for the best, plan for <br />
+        the worst.
+      </h1>
+    </div>
+
+
+      <div class="grid-container5">
+        <div class="grid-item5">
+          <h4 class="h45"><strong>Tried-and-true tools</strong></h4>
+          <p class="p5">
+            Get the resources you need to build bulletproof SOWs, guard yourself
+            from lawsuits and offer clearly defined terms for how you like to
+            work.
+          </p>
+          <p>‍</p>
+        </div>
+        <div class="grid-item5">
+          <h4 class="h45"><strong>Be in charge</strong></h4>
+          <p class="p5">
+            Work on your own terms and set the rules of engagement for all of
+            your projects. Protect your business from the start to the very end
+            of every engagement.
+          </p>
+          <p>‍</p>
+        </div>
+        <div class="grid-item5">
+          <h4 class="h45">
+            <strong>Build better client relationships</strong>
+          </h4>
+          <p class="p5">
+            Show clients how professional and serious you are about helping them
+            with the documentation to back it up. Your client will think,
+            “They've clearly done this before.”
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="grid-container6">
+      <div class="grid-item6" id="gi61">
+        <div class="">WHO THIS IS FOR  ____________</div>
+      </div>
+      <div class="grid-item6" id="gi62">
+        <h2 id="h26">This kit is for anyone who works with clients.</h2>
+        <p>
+          No matter where you are in your career, you should always be prepared.
+          Protect yourself and your business from just about anything with the
+          resources in this kit. This is for you:
+        </p>
+        <ul class="l6 role="list">
+          <li>Students</li>
+          <li>Freelancers</li>
+          <li>Creative Directors</li>
+          <li>Studio Owners</li>
+        </ul>
+      </div>
+    </div>
+
+        <div class="grid-container7">
+      <div class="grid-item7" id="gi71">
+        <h1 id="h71">The Legal Kit</h1>
+        <p id="gi71p">Free your mind from worrying about the what-ifs and focus on <br> what's important. These industry standard legal agreements can <br> be used internationally so you can be prepared for whatever <br> comes your way.</p>
+      </div>
+      <div class="grid-item7" id="gi72">
+        <img id="img72" src="https://assets-global.website-files.com/5d816b07d269382588dbcab1/5e2a3a0bee34247da9432ff8_legal-sales-hero.png" >
+      </div>
+      <div class="grid-item7" id="gi73">
+        <h4 id="gi73h4">Enroll now <hr style="height: 2px;"></h4>
+        <h1 id="gi73h1">$99</h1>
+        <button id="gi73btn" class="btn btn-danger">BUY NOW</button>
+      </div>
+      <div class="grid-item7" id="gi74">
+        <h4 id="gi73h4"> What's inside<hr style="height: 2px;"></h4>
+        <ul class="gi74ul">
+          <li class="gi74li">15 page guidebook</li>
+          <li class="gi74li">MSA &amp; SOW templates</li>
+          <li class="gi74li">Employee agreement templates</li>
+          <li class="gi74li">NDA &amp; media release templates</li>
+          <li class="gi74li">Lifetime updates</li>
+        </ul>
+      </div>
+      <div class="grid-item7" id="gi75"></div>
+      <div class="grid-item7" id="gi76"></div>
+    </div>
+
+    <div class="grid-container8">
+      <div class="grid-item8" id="gi81">
+        <h4>RELATED PRODUCTS_______</h4>
+      </div>
+      <div class="grid-item8" id="gi82">
+        <div class="card-group">
+          <div class="card">
+            <img
+              src="https://assets-global.website-files.com/5d816b07d269382588dbcab1/60d4a938d3cf567498660fd4_TheFutur_Style-Guide-Kit-Cover-Square-800x800.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Brand Style Guide Kit</h5>
+              <div class="d-flex align-items-center cbdata">
+              <img class="gc8img"
+                src="https://assets-global.website-files.com/5d816b07d269382588dbcab1/60cd0f215aaef40b412da04e_image-profile-ben2-140-min.jpg"
+                alt="Ben Burns"
+              />
+              <div id="gc8name">BEN BURNS</div>
+              <h4 class="ms-auto">$79</h4>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid-item8" id="gi83">
+        <div class="card-group">
+          <div class="card">
+            <img
+              src="https://assets-global.website-files.com/5d816b07d269382588dbcab1/60d4ab2d67547cdeedf9c212_TheFutur_Perfect%20Proposal-800x800.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Brand Style Guide Kit</h5>
+              <div class="d-flex align-items-center cbdata">
+              <img class="gc8img"
+                src="https://assets-global.website-files.com/5d816b07d269382588dbcab1/60cd0f215aaef40b412da04e_image-profile-ben2-140-min.jpg"
+                alt="Ben Burns"
+              />
+              <div id="gc8name">BEN BURNS</div>
+              <h4 class="ms-auto">$59</h4>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid-item8" id="gi84">
+        <div class="card-group">
+          <div class="card">
+            <img
+              src="https://assets-global.website-files.com/5d816b07d269382588dbcab1/60d4ab39b9f674f01cc63124_TheFutur_The%20complete%20case%20study-800x800.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Brand Style Guide Kit</h5>
+              <div class="d-flex align-items-center cbdata">
+              <img class="gc8img"
+                src="https://assets-global.website-files.com/5d816b07d269382588dbcab1/60cd0f215aaef40b412da04e_image-profile-ben2-140-min.jpg"
+                alt="Ben Burns"
+              />
+              <div id="gc8name">BEN BURNS</div>
+              <h4 class="ms-auto">$79</h4>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="grid-container9">
+      <div class="grid-item9">
+        <img
+        src="https://assets-global.website-files.com/5d816b07d269385f68dbcab0/5d816b07d2693835f9dbcc15_the-futur-home-chris-do-live-speaking-event.jpg"
+        alt=""
+        class=""
+
+      />
+      <h3 class="gi91">Learn</h3>
+      <p class="gi9">
+        See a comprehensive list of our video content, articles, resources, and
+        products about subjects like brand strategy, graphic design, typography,
+        logo design, business, and lots more.
+      </p>    
+      <div class="" id="gi9d">Learn anything</div>
+        <img
+          src="https://assets-global.website-files.com/5d816b07d269385f68dbcab0/5d816b07d26938510bdbcb1c_24px%20right%20arrow%20-%20white.png"
+          alt=""
+          class=""
+          id="gi9img"
+        />
+    </div>
+      <div class="grid-item9">
+        <img
+        src="https://assets-global.website-files.com/5d816b07d269385f68dbcab0/5d816b07d26938fbd0dbcc14_the-futur-home-live-event-stats.jpg"
+        alt=""
+        class=""
+      />
+      <h3 class="gi92" >Collaborate</h3>
+      <p class="gi9">
+        Let's collaborate! Hire our team to speak at your event, advertise on
+        our platforms, or appear on our show.<br/>
+      </p>
+      <div class="" id="gi92d">Collaborate with The Futur</div>
+        <img id="gi92img"
+          src="https://assets-global.website-files.com/5d816b07d269385f68dbcab0/5d816b07d26938510bdbcb1c_24px%20right%20arrow%20-%20white.png"
+        />
+      </div>
+    </div>
+    <div class="grid-container10">
+      <div class="grid-item10">
+        <div class="gi10hdr"><a href="/learn">Learn</a></div>
+        <div class="gi10a"><a href="/content/pricing" >Pricing</a></div>
+        <div class="gi10a"><a href="/content/logo-design" >Logo Design</a></div>
+        <div class="gi10a"><a href="/content/branding" >Branding</a></div>
+        <div class="gi10a"><a href="/content/lead-generation" >Lead Generation</a></div>
+        <div class="gi10a"><a href="/content/design" >Design</a></div>
+        <div class="gi10a"><a href="/learn" >View All</a></div>
+      </div>
+      <div class="grid-item10">
+        <div class="gi10hdr"><a href="/shop">Shop</a></div>
+        <div class="gi10a"><a href="/product-categories/business-skills">Business Skills</a></div>
+        <div class="gi10a"><a href="/product-categories/creative-skills">Creative Skills</a></div>
+        <div class="gi10a"><a href="/product-categories/business-resources">Business Resources</a></div>
+        <div class="gi10a"><a href="https://bookstore.thefutur.com/">Merchandise</a></div>
+        <div class="gi10a"><a href="/pro-group" >The Pro Group</a></div>
+        <div class="gi10a"><a href="/private-coaching" >Private Coaching</a></div>
+        <div class="gi10a"><a href="/shop" >View All</a></div>
+      </div>
+      <div class="grid-item10">
+        <div class="gi10hdr"><a href="/collaborate">Collaborate</a></div>
+        <div class="gi10a"><a href="https://thefutur.com/careers">Work With Us</a></div>
+        <div class="gi10a"><a href="https://thefutur.com/become-an-affiliate" >Become An Affiliate</a></div>
+        <div class="gi10a"><a href="https://thefutur.com/become-a-sponsor"  >Advertise With Us</a></div>
+        <div class="gi10a"><a href="https://thefutur.com/speaking-engagements" >Hire Us To Speak</a > </div>
+        <div class="gi10a"><a href="/frequently-asked-questions"  >FAQs</a ></div>
+        <div class="gi10a"><a href="/connect" >Get Support</a ></div>
+        <div class="gi10a"><a href="/report-a-bug" >Report A Bug</a></div>
+      </div>
+      <div class="grid-item10" id="gi104">
+        <h1 id="gi104h">Be the first to know</h1>
+        <button id="gi104btn">JOIN OUR NEWSLETTER</button>
+      </div>
+      </div>
+
+
+      <footer class="d-flex container11">
+        <div class="c11CR">
+          Copyright © 2012-2021 The Futur LLC
+        </div>
+        <div class="c11d2 d-flex">
+          <div id="c11a1"><a href="/terms-and-conditions" class="c11a">Terms &amp; Conditions</a></div>
+          <div id="c11a2"><a href="/privacy-policy" class="c11a">Privacy Policy</a></div>
+        </div>
+        </footer>
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
